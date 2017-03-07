@@ -1,3 +1,8 @@
-1. Install docker - Done
-2. Create docker image - Done
-3. Exeecute docker image - Done
+1. Install docker 			- Done
+2. Create docker image 			- Done
+3. Exeecute docker image 		- Done
+4. Create docker image with nodejs
+5. Create sample nodejs application
+6. Merge image with application?
+7. Run application
+8. Deploy somewhere
