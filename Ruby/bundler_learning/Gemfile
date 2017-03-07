@@ -1,0 +1,6 @@
+source 'https://rubygems.org'
+
+gem 'sinatra', github: 'sinatra/sinatra'
+
+# Specify your gem's dependencies in bundler_learning.gemspec
+gemspec
