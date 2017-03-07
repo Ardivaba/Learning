@@ -8,6 +8,7 @@ require 'dm-sqlite-adapter'
 # Api module
 module Api
   # Start service
+  # Added comment...
   def start()
     ApiObject.new
   end
