@@ -1,14 +1,22 @@
 require 'thread'
 
-lock = Mutex.new
+queue = Queue.new
+
 threads = (1..100).map do |number|
   Thread.new do
     sleep 0.5
-    lock.lock
-    print "\nThread finished: #{number}"
-    lock.unlock
+    queue.push number
   end
 end
+
+printer = Thread.new do
+  loop do
+    number = queue.pop
+    puts number
+  end
+end
+
+printer.join
 
 threads.each do |thread|
   thread.join
